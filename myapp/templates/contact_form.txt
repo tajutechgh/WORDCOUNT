@@ -1,0 +1,16 @@
+<body style="background-color: #d3d3d3">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+    </style>
+    <br><br>
+    <center>
+        <div style="background-color: #fff; width: 78px; height: 600px; border-radius: 5px; margin-top: 50px; font-family: roboto;">
+            <br><br>
+            <p style="font-size: 22px;">Hello, <a href="" style="color: #0d6efd; text-decoration: none;">{{ username }}</a> </p>
+            <p style="font-size: 15px;">We received a request via this email address: <a href="" style="color: #0d6efd; text-decoration: none;">{{ email }}</a></p>
+
+            <hr style="color: #0d6efd; width: 80%;">
+            <p style="font-size: 25px;">Thank you for registering with us to join our django email testing, kind regards.</p>
+        </div>
+    </center>
+</body>

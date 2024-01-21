@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="login">
+    <h1>SignIn your account.</h1>
+
+    {% for message in messages %}
+        <h5 style="color: red;">{{ message}}</h5>
+    {% endfor %}
+
+    <form method="POST" action="login">
+        {% csrf_token %}
+        <p>Username:</p>
+        <input type="text" name="username" class="field" required>
+        <p>Password:</p>
+        <input type="password" name="password" class="field" required><br><br>
+        <input type="submit" class="submit">
+    </form>
+    <br>
+    <a href="register">Signup here if you don't have an account</a>
+</div>
